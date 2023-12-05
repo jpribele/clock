@@ -12,8 +12,12 @@
    }
  </script>
  <style type="text/css">
-  .flex-container {
+  .flex-horizontal {
     display: flex;
+}
+.flex-vertical {
+  display: flex;
+  flex-flow: column;
 }
 
 .flex-child {
@@ -27,14 +31,20 @@
  </style>
 </head>
 <body onload="currentTime()">
-  <div class="flex-container">
+  <div class="flex-horizontal">
     <div class="flex-child">
-      <div><img src="Moon.png" width="50%"/>
-    </div></div>
+      <div><img src="Moon.png" width="50%"/></div>
+  </div>
+    <div class="flex-child flex-veritical">
+
+    
     <div class="flex-child">
       <div class="blue">Float Column 2</div>
     </div>
-    
+    <div class="flex-child">
+      <div>text</div>
+    </div>
+    </div>
   </div>
   <!-- <div><img src="Moon.png"/></div>
  <div id="clock">
