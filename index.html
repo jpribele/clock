@@ -11,12 +11,35 @@
     document.body.style.backgroundColor = "red";
    }
  </script>
- 
+ <style type="text/css">
+  .flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+ </style>
 </head>
 <body onload="currentTime()">
-  <div><img src="Moon.png"/></div>
+  <div class="float-container">
+    <div class="float-child">
+      <img src="Moon.png" width="50%"/>
+    </div>
+    <div class="float-child">
+      <div class="blue">Float Column 2</div>
+    </div>
+    
+  </div>
+  <!-- <div><img src="Moon.png"/></div>
  <div id="clock">
    test alert
- </div> 
+ </div> -->
+
 </body>
 </html>
